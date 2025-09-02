@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos</title>
+  <link rel="stylesheet" href="../css/productos.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">🛍️ Tienda</div>
+    <nav>
+      <a href="../index.html">🏠 Home</a>
+      <a href="./productos.html" class="active">📦 Productos</a>
+      <a href="./reseñas.html">⭐ Reseñas</a>
+      <a href="./referidos.html">👥 Referidos</a>
+      <a href="./impacto.html">🌍 Impacto</a>
+    </nav>
+  </aside>
+
+  <!-- Contenido principal -->
+  <main class="main-content">
+    <header>
+      <h1>Catálogo de Productos</h1>
+      <input type="text" id="searchBar" placeholder="Buscar productos...">
+    </header>
+
+    <!-- Grid de productos -->
+    <section class="product-grid" id="productGrid">
+      <!-- Tarjetas (ejemplo) -->
+      <div class="product-card">
+        <img src="../assets/img/product1.jpg" alt="Producto 1">
+        <h3>Producto 1</h3>
+        <p class="price">$19.990</p>
+        <button class="btn-add">Agregar al carrito</button>
+      </div>
+
+      <div class="product-card">
+        <img src="../assets/img/product2.jpg" alt="Producto 2">
+        <h3>Producto 2</h3>
+        <p class="price">$29.990</p>
+        <button class="btn-add">Agregar al carrito</button>
+      </div>
+
+      <div class="product-card">
+        <img src="../assets/img/product3.jpg" alt="Producto 3">
+        <h3>Producto 3</h3>
+        <p class="price">$39.990</p>
+        <button class="btn-add">Agregar al carrito</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/productos.js"></script>
+</body>
+</html>
