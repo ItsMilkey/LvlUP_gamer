@@ -1,0 +1,149 @@
+/* --- Reset general --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace, Arial, sans-serif;
+  display: flex;
+  background-color: #fefefe;
+  color: #111;
+}
+
+/* --- Sidebar --- */
+.sidebar {
+  width: 220px;
+  background: #dceefb;
+  min-height: 100vh;
+  border-right: 3px solid #000;
+  padding: 20px;
+}
+
+.sidebar .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #000;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  border: 2px solid #000;
+  background: #fff;
+}
+
+/* --- Contenido principal --- */
+.main-content {
+  flex: 1;
+  padding: 20px 40px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* --- Tarjetas destacadas --- */
+.highlight-card {
+  border: 3px solid #000;
+  border-radius: 15px;
+  background: #fff8dc;
+  padding: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.highlight-card h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.highlight-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* --- Botón mapa --- */
+.map-btn {
+  margin-top: 15px;
+}
+
+.map-btn a {
+  display: inline-block;
+  background: #ffdd57;
+  border: 2px solid #000;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.map-btn a:hover {
+  background: #ffe98a;
+}
+
+/* --- Secciones de categorías (Noticias / Tips) --- */
+.categories {
+  margin-bottom: 40px;
+}
+
+.categories h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 15px;
+  background: #dceefb;
+  text-align: center;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.category-card:hover {
+  background: #b3d9f3;
+  transform: scale(1.03);
+}
+
+.category-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.category-card p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.category-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 2px solid #000;
+}

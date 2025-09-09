@@ -1,0 +1,101 @@
+/* Estilo general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace, Arial, sans-serif;
+  background-color: #fefefe;
+  color: #111;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  margin-bottom: 20px;
+}
+
+header nav {
+  display: flex;
+  gap: 15px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  border: 2px solid transparent;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+header nav a:hover,
+header nav a.active {
+  border: 2px solid #000;
+  background: #fff;
+}
+
+/* Contenedor de perfil */
+.perfil-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 3px solid #000;
+  border-radius: 10px;
+  background: #f0f8ff;
+}
+
+.perfil-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Formulario */
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background: #90ee90;
+  border: 2px solid #000;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #b0f0b0;
+}
+
+.btn-logout {
+  margin-top: 20px;
+  background: #ff6961;
+  color: #fff;
+}
+
+.btn-logout:hover {
+  background: #ff4c4c;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
