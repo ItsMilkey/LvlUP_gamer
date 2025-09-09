@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil | LvL-UP Gamer</title>
+  <link rel="stylesheet" href="../css/perfil.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="referidos.html">Referidos</a>
+      <a href="reseñas.html">Reseñas</a>
+      <a href="impacto.html">Impacto</a>
+      <a href="carrito-walmart.html">Carrito</a>
+      <a href="perfil.html" class="active">Perfil</a>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="perfil-container">
+    <h1>👤 Mi Perfil</h1>
+
+    <!-- Información del usuario -->
+    <form id="perfilForm">
+      <label for="username">Nombre de usuario</label>
+      <input type="text" id="username" required>
+
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" required disabled>
+
+      <label for="birthdate">Fecha de nacimiento</label>
+      <input type="date" id="birthdate" required>
+
+      <label for="preferencia">Categoría favorita</label>
+      <select id="preferencia">
+        <option value="">Selecciona una</option>
+        <option value="Juegos de Mesa">Juegos de Mesa</option>
+        <option value="Accesorios">Accesorios</option>
+        <option value="Consolas">Consolas</option>
+        <option value="Computadores Gamers">Computadores Gamers</option>
+        <option value="Sillas Gamers">Sillas Gamers</option>
+        <option value="Mouse">Mouse</option>
+        <option value="Mousepad">Mousepad</option>
+        <option value="Poleras Personalizadas">Poleras Personalizadas</option>
+        <option value="Polerones Gamers">Polerones Gamers</option>
+      </select>
+
+      <button type="submit" class="btn">Guardar cambios</button>
+    </form>
+
+    <!-- Cerrar sesión -->
+    <button id="logout" class="btn btn-logout">Cerrar sesión</button>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 LvL-UP Gamer</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="../js/perfil.js"></script>
+</body>
+</html>

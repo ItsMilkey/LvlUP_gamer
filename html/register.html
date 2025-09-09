@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro | LvL-UP Gamer</title>
+  <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+  <div class="auth-container">
+    <h1>Registro</h1>
+    <form id="registerForm">
+      <label for="username">Usuario</label>
+      <input type="text" id="username" placeholder="Tu usuario" required>
+
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" placeholder="ejemplo@correo.com" required>
+
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" placeholder="********" required>
+
+      <!-- 🔥 Confirmación de contraseña -->
+      <label for="confirmPassword">Confirmar Contraseña</label>
+      <input type="password" id="confirmPassword" placeholder="********" required>
+
+      <!-- 🔥 Fecha de nacimiento para validar +18 -->
+      <label for="birthdate">Fecha de nacimiento</label>
+      <input type="date" id="birthdate" required>
+      ---------------------------------
+      <!-- 🔥 Campo código de referido -->
+      <label for="referral">¿Tienes un código de referido? ¡Ingresa aquí! (opcional)</label>
+      <input type="text" id="referral" placeholder="Ej: ABC123">
+
+      <!-- 🔥 Promoción DUOC -->
+      <div class="promo">
+        <p>🎉 Usuarios con correo <strong>@duoc.cl</strong> obtienen un <strong>20% de descuento</strong> en su primera compra.</p>
+      </div>
+
+      <!-- 🔥 Checkbox términos -->
+      <div class="terms">
+        <input type="checkbox" id="terms" required>
+        <label for="terms">Acepto los términos y condiciones</label>
+      </div>
+
+      <button type="submit" class="btn">Crear cuenta</button>
+    </form>
+
+    <p class="switch">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+  </div>
+
+  <!-- 🔥 Script validaciones -->
+  <script src="../js/register.js"></script>
+</body>
+</html>

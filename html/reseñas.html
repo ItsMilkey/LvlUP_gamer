@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reseñas | LvL-UP Gamer</title>
+  <link rel="stylesheet" href="../css/reseñas.css">
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="reseñas.html" class="active">Reseñas</a>
+      <a href="referidos.html">Referidos</a>
+      <a href="comunidad.html">Comunidad</a>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="reseñas-container">
+    <h1>Reseñas de Clientes</h1>
+
+    <!-- 🔥 Formulario para nueva reseña -->
+    <form id="reviewForm">
+      <label for="name">Tu nombre</label>
+      <input type="text" id="name" placeholder="Ej: Carla" required>
+
+      <label for="rating">Calificación</label>
+      <select id="rating" required>
+        <option value="">Selecciona ⭐</option>
+        <option value="5">⭐⭐⭐⭐⭐</option>
+        <option value="4">⭐⭐⭐⭐</option>
+        <option value="3">⭐⭐⭐</option>
+        <option value="2">⭐⭐</option>
+        <option value="1">⭐</option>
+      </select>
+
+      <label for="comment">Tu reseña</label>
+      <textarea id="comment" rows="3" placeholder="Escribe tu experiencia..." required></textarea>
+
+      <button type="submit" class="btn">Enviar Reseña</button>
+    </form>
+
+    <!-- 🔥 Lista de reseñas -->
+    <section id="reviewsList">
+      <article>
+        <h3>Ana</h3>
+        <p class="stars">⭐⭐⭐⭐⭐</p>
+        <p>"Excelente servicio y atención."</p>
+      </article>
+      <article>
+        <h3>Pedro</h3>
+        <p class="stars">⭐⭐⭐⭐</p>
+        <p>"Muy recomendado, volveré a comprar."</p>
+      </article>
+      <article>
+        <h3>Sofía</h3>
+        <p class="stars">⭐⭐⭐⭐⭐</p>
+        <p>"Gran calidad y rapidez en la entrega."</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 LvL-UP Gamer</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="../js/reseñas.js"></script>
+</body>
+</html>

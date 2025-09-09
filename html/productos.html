@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos</title>
+  <link rel="stylesheet" href="../css/productos.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">🛍️ Tienda</div>
+    <nav>
+      <a href="../html/index.html">🏠 Inicio</a>
+      <a href="../html/productos.html" class="active">📦 Productos</a>
+      <a href="../html/reseñas.html">⭐ Reseñas</a>
+      <a href="../html/referidos.html">👥 Referidos</a>
+      <a href="../html/comunidad.html">🌍 Comunidad</a>
+      <!-- Carrito -->
+      <div class="sidebar-cart">
+        <h3>🛒 Carrito</h3>
+        <ul id="cartItems"></ul>
+        <p id="cartTotal">Total: $0</p>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- Contenido principal -->
+  <main class="main-content">
+    <header>
+      <h1>Catálogo de Productos</h1>
+      <input type="text" id="searchBar" placeholder="Buscar productos...">
+    </header>
+
+    <!-- Carrusel de productos destacados -->
+     <h3>Destacados de la semana:</h3>
+    <section class="highlight-card">
+      <div class="carousel" id="carousel"></div>
+      <div class="carousel-controls">
+        <button id="prevBtn">⬅️</button>
+        <button id="nextBtn">➡️</button>
+      </div>
+    </section>
+
+    <!-- Categorías -->
+    <section class="categories">
+      <h2>Categorías</h2>
+      <div class="category-grid">
+        <button class="category-btn" data-category="all">Todos</button>
+        <button class="category-btn" data-category="Juegos de Mesa">Juegos de Mesa</button>
+        <button class="category-btn" data-category="Accesorios">Accesorios</button>
+        <button class="category-btn" data-category="Consolas">Consolas</button>
+        <button class="category-btn" data-category="Computadores Gamers">Computadores Gamers</button>
+        <button class="category-btn" data-category="Sillas Gamers">Sillas Gamers</button>
+        <button class="category-btn" data-category="Mouse">Mouse</button>
+        <button class="category-btn" data-category="Mousepad">Mousepad</button>
+        <button class="category-btn" data-category="Poleras Personalizadas">Poleras Personalizadas</button>
+        <button class="category-btn" data-category="Polerones Gamers">Polerones Gamers</button>
+      </div>
+    </section>
+
+        <!-- Grid de productos -->
+    <section class="product-grid" id="productGrid"></section>
+
+    <!-- Modal de detalle producto -->
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <img id="modalImage" src="" alt="Imagen producto">
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <small id="modalExtra"></small>
+      </div>
+    </div>
+  </main>
+
+  <script src="../js/productos.js"></script>
+</body>
+</html>
